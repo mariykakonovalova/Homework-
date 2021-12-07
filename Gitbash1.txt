@@ -1,0 +1,188 @@
+
+GIT Homework 1
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+ 5. Клонировать репозиторий JSON на локальный компьютер.“new.json”.git clone  https://github.com/mariakonovalova0512/JSON-.git
+
+ 6. Внутри локального JSON создать файл “new.json”  cd JSON-  touch new.json
+   
+ 7. Добавить файл под гит.git add new.json
+ 8. Закоммитить файл.commit -m "add new.json"
+ 9. Отправить файл на внешний GitHub репозиторий.git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+i
+{
+        "name":"Maria",
+        "surname":"Konovalova" ,
+        "age":32 ,
+        "pets":1 ,
+        "desired salary":500
+}
+esc :wq
+ 11. Отправить изменения на внешний репозиторий.  $ git commit -am "add name,surname,age,pets,desired salary in new.json"  git push
+
+
+ 12. Создать файл preferences.json touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+
+i
+{     "Favorite film":"The Pursit of Happyess" ,
+       "Favorite TV series":"Money Heist",
+       "Favorite food":"seafood" ,
+       "The country i want to visit":"Norway"
+}
+esc :wq
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON touch sklls.json
+i
+vim sklls.json
+{
+"Courses":"QA",
+"Skills":"Git","Postman","Python","Jmeter","Charles","Android studio"
+}
+esc :wq
+ 15. Отправить сразу 2 файла на внешний репозиторий.  git add .   git commit -am "add preferenses, sklls.json"  git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+{
+ "summary":"missing price in item",
+ "Priority":"Medium" ,
+ "Severity":"Minor" ,
+ "Description":"missing price in item" ,
+ "Expected_Result":"latest poducts section",
+ "Actual_result":"See the",
+
+ "Steps_to_reproduse":1 "Open http://store.demoga.com/",
+                      2 "go in the bottom All produkt" ,
+                      3 "go to third item called "iPod Nano Blueand"and you will see $0.00" ,  
+
+}
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.Commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON   git fetch   git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.   git clone git@github.com:mariykakonovalova/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.  cd XML touch new.xml
+
+ 24. Добавить файл под гит.  git add new.xml
+
+ 25. Закоммитить файл.   git commit -m "add new.xml"
+ 26. Отправить файл на внешний GitHub репозиторий.  git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+     vim new.xml
+         <name>:Maria</Maria>
+         <surname>:Konovalova</surname>
+         <age>32</age>
+         <pets>1</pets>
+         <desired_salary>500$</desired_salary>
+
+esc :wq
+ 28. Отправить изменения на внешний репозиторий.   git commit -am "add name,surname,age,pets,desired salary in new.xml"  git push
+
+ 29. Создать файл preferences.xml    touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.   
+    i
+<Favorite_film> The Pursit of Happyess</Favotite_film>
+<Favorite_TV_series>:Money Heist</FavoriteTV_series>
+<Favorite_food>seafood</Favorit_food>
+<The_country_i_want_to_visit>Norway </The country i want to visit>
+
+esc :wq
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML  touch sklls.xml
+ i
+<Courses>QA</Courses>
+<Skills>Git","Postman","Python","Jmeter","Charles","Android studio"</Skills>
+esc :wq
+
+ 32. Сделать коммит в одну строку. git add  .   git commit -am "add sklls.xml preferenses.xml"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.  git push
+ 34. На веб интерфейсе создать файл bug_report.xml.   Create bug_report.xml  
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit new file
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ <summary>missing price in item</summary>
+ <Priority>Medium</Priority>
+ <Severity>Minor</Severity>
+ <Description>missing price in item</Description>
+ <Expected_Result>latest poducts section</Expected_Result>
+ <Actual_result>See the price in item</Actual_result>
+
+ <Steps_to_reproduse> 1 "Open http://store.demoga.com/"
+                      2 "go in the bottom All produkt" 
+                      3 "go to third item called "iPod Nano Blueand"and you will see $0.00 
+
+ Update bug_report.xml  
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  Commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML git fetch   git pull
+
+
+
+Vadim Ksendzov, [03.12.2021 15:37]
+[Переслано из 25_QA_Channel]
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+ 2. Клонировать репозиторий TXT на локальный компьютер. git clone git@github.com:mariykakonovalova/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”. cd TXT  touch new.txt
+ 4. Добавить файл под гит.  git add new.txt
+
+ 5. Закоммитить файл.  git commit -m "add new.txt"
+ 6. Отправить файл на внешний GitHub репозиторий.git push
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+i
+       name:Maria
+        surname:Konovalova
+        age:32
+        pets:1
+        desired salary:500$
+esc :wq
+ 8. Отправить изменения на внешний репозиторий.   $ git commit -am "add name,surname,age,pets,desired salary in new.xml"  git push
+ 9. Создать файл preferences.txt   touch preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+vim preferences.txt
+i
+     Favorite film:"The Pursit of Happyess"
+       Favorite TV series:"Money Heist"
+       Favorite food":seafood
+       The country i want to visit:Norway
+esc :wq
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT touch sklls.txt  vim sklls.txt
+i
+   Courses:"QA",
+   Skills:"Git","Postman","Python","Jmeter","Charles","Android studio".
+esc :wq
+ 12. Сделать коммит в одну строку. git add .    git commit -am "add name,surname,age,pets,desired salary in new.txt"  
+ 13. Отправить сразу 2 файла на внешний репозиторий.  git push
+ 14. На веб интерфейсе создать файл bug_report.txt.  Create bug_report.xml 
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Commit new file
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+ Summary:"missing price in item",
+ Priority:Medium,
+ Severity:Minor,
+ Description:missing price in item,
+ Expected Result:latest poducts section,
+ Actual result:See the price in item.
+
+ Steps to reproduse:1. Open http://store.demoga.com.
+                      2. Go in the bottom All produkt.
+                      3. Go to third item called "iPod Nano Blueand"and you will see $0.00.
+
+ Update bug_report.xml
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.  Commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT  git fetch   git pull
